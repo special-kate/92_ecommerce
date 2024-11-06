@@ -1,0 +1,198 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* Category
+-----------------------------------------------------------------*/
+.category {
+	position: relative;
+	border: 1px solid #e5e5e5;
+
+	.category-image {
+		position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.category-desc {
+		position: relative;
+		padding: 5rem 3rem 3rem;
+	}
+
+	.category-title {
+		font-size: 2.1875rem;
+	}
+}
+
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	margin-bottom: 1.625rem;
+	position: relative;
+	border: 1px solid #e5e5e5;
+	padding: 2.25rem;
+
+	.product-image {
+		position: relative;
+		text-align: center;
+
+		img {
+			width: 100%;
+			height: auto;
+			max-height: 18rem;
+		}
+	}
+
+	.product-details {
+		padding: 1.25rem 0 0 0;	
+	}
+
+	.product-title {
+		font-size: 1.5625rem;
+	}
+
+	.product-price {
+		color: #2f363a;
+		font-family: $heading-font;
+		font-size: 1.25rem;
+		font-weight: 600;
+
+		del {
+			font-size: 0.875rem;
+			font-weight: 500;
+			color: #a3a3a3;
+			padding-left: 0.25rem;
+		}
+	}
+
+	.product-info {
+		font-size: 0.75rem;
+		color: #7f7f7f;
+	}
+	
+	.product-rating {
+		i {
+			color: $theme-color;
+		}
+	}
+
+	.onnew, .onsale, .ontop {
+		position: absolute;
+		top: 1.5rem;
+		right: 1.5rem;
+		color: #fff;
+		font-family: $heading-font;
+		font-size: .875rem;
+		font-weight: 500;
+		display: inline-block;
+		width: 4.5rem;
+		height: 2.5rem;
+		line-height: 2.5rem;
+		text-align: center;
+		z-index: 2;
+		text-transform: uppercase;
+	}
+
+	.onnew, .ontop {
+		background-color: $theme-color;
+	}
+
+	.onsale {
+		background-color: #e3252e;
+		height: 1.875rem;
+		line-height: 2rem;
+	}
+
+	.add-to-cart {
+		color: $white;
+		text-transform: uppercase;
+	}
+
+	.add-to-wishlist {
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: $dark;
+	}
+}
+
+.ads {
+	position: relative;
+    display: block;
+	margin-bottom: 1.5rem;
+
+	.ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+	.ads-body {
+        position: relative;
+        z-index: 1;
+    }
+
+	&.ads1 {
+		.ads-body {
+			padding: 4rem;
+			padding-bottom: 22.15rem;
+		}
+	}
+
+	&.ads2 {
+		.ads-body {
+			padding: 7rem 3rem;
+
+			h3 {
+				font-size: 2.1875rem;
+			}
+		}
+	}
+
+	&.ads3 {
+		.ads-body {
+			padding: 7rem 3rem 8rem;
+
+			h3 {
+				font-size: 2.1875rem;
+			}
+		}
+	}
+}
